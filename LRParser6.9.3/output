@@ -1,0 +1,44 @@
+### TRY2 ###
+ simpleexpr->ID;
+Children_Number:1
+Children_Value:i
+
+
+multexprprime->    
+
+multexpr->simpleexpr multexprprime
+Children_Number:2
+Children_Number:3
+
+arithexprprime-> 
+
+arithexpr->multexpr arithexprprime;
+Children_Number:4
+Children_Number:5
+
+boolop->'>';
+Children_value='>'Children_Number:7
+Children_value:>
+
+
+simpleexpr->NUM;
+Children_Number:9
+
+multexprprime->    
+
+multexpr->simpleexpr multexprprime
+Children_Number:10
+Children_Number:11
+
+arithexprprime-> 
+
+arithexpr->multexpr arithexprprime;
+Children_Number:12
+Children_Number:13
+
+boolexpr->arithexpr boolop arithexpr
+Children_Number:6
+Children_Number:8
+Children_Number:14
+
+!!!-----linenumber(2) wordnumber(7):syntax error ! -----
