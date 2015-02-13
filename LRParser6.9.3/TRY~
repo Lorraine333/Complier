@@ -1,0 +1,22 @@
+{
+	i=1;
+	j=2;
+	n=3;
+	s=4;
+	m=5;
+	if (n<2) 
+	then 
+		n=n+2; 
+	else 
+		n=n*2;
+	while (i>0) 
+	{
+		n=n+1;
+		i=i-1;
+	}
+	if (i==j) 
+	then 
+		s=s-j; 
+	else 
+		m=m-j/2;
+}
